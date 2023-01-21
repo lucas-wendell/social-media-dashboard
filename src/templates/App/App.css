@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+	/* Primary */
+	--lime-green: hsl(163, 72%, 41%);
+	--bright-red: hsl(356, 69%, 56%);
+	--twitter-color: hsl(203, 89%, 53%);
+	--youtube-color: hsl(348, 97%, 39%);
+	--facebook-color: hsl(208, 92%, 53%);
+
+	/* Dark Theme */
+	--card-bg: hsl(228, 28%, 20%);
+	--dark-blue-bg: hsl(230, 17%, 14%);
+	--text-white-color: hsl(0, 0%, 100%);
+	--dark-blue-topBg: hsl(232, 19%, 15%);
+	--text-gray-color: hsl(228, 34%, 66%);
+
+	/* Light Theme */
+	--white-bg: hsl(0, 0%, 100%);
+	--white-topBg: hsl(225, 100%, 98%);
+	--white-card-bg: hsl(227, 47%, 96%);
+	--whiteTheme-text-color: hsl(228, 12%, 44%);
+	--whiteTheme-blue-text-color: hsl(230, 17%, 14%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--dark-blue-bg);
+}
+
+.topBg {
+	top: 0;
+	left: 0;
+	height: 30%;
+	width: 100%;
+	position: absolute;
+	background-color: var(--dark-blue-topBg);
+}
+
+/* 
+### Primary
+
+- Lime Green: hsl(163, 72%, 41%)
+- Bright Red: hsl(356, 69%, 56%)
+
+- Facebook: hsl(208, 92%, 53%)
+- Twitter: hsl(203, 89%, 53%)
+- Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)
+- YouTube: hsl(348, 97%, 39%)
+
+#### Dark Theme
+
+- Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)
+
+#### Light Theme
+
+- Toggle: hsl(230, 22%, 74%)
+
+### Neutral
+
+#### Dark Theme
+
+- Very Dark Blue (BG): hsl(230, 17%, 14%)
+- Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
+- Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
+- Desaturated Blue (Text): hsl(228, 34%, 66%)
+- White (Text): hsl(0, 0%, 100%)
+
+#### Light Theme
+
+- White (BG): hsl(0, 0%, 100%)
+- Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
+- Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
+- Dark Grayish Blue (Text): hsl(228, 12%, 44%)
+- Very Dark Blue (Text): hsl(230, 17%, 14%)
+*/
