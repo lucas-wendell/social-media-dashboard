@@ -1,0 +1,4 @@
+.cardContaier {
+	display: flex;
+	gap: 20px;
+}
