@@ -3,7 +3,7 @@ export const ToggleButton = () => {
 	return (
 		<div className="buttonDiv">
 			<p>Dark Mode</p>
-			<div className="button"></div>
+			<div className="button" data-theme="dark"></div>
 		</div>
 	);
 };
