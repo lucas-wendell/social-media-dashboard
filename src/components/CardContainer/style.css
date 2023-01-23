@@ -1,4 +1,11 @@
 .cardContaier {
 	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.cards {
+	display: flex;
+	align-items: center;
 	gap: 20px;
 }
