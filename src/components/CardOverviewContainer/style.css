@@ -1,0 +1,13 @@
+.cardOverviewContainer {
+	margin-top: 35px;
+}
+
+.cardOverviewContainer h2 {
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}

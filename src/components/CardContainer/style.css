@@ -1,11 +1,11 @@
 .cardContaier {
+	gap: 40px;
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
 }
 
 .cards {
+	gap: 20px;
 	display: flex;
 	align-items: center;
-	gap: 20px;
 }
