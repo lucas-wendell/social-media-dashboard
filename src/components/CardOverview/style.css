@@ -32,6 +32,11 @@
 	background-color: var(--card-bg);
 }
 
+.cardOverview:hover {
+	cursor: pointer;
+	background-color: hsl(229, 25%, 26%);
+}
+
 .cardOverview .socialMediaDiv {
 	display: flex;
 	font-weight: 700;

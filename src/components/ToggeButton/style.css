@@ -43,6 +43,7 @@
 	align-items: center;
 	justify-content: flex-start;
 	position: relative;
+	cursor: pointer;
 }
 
 .buttonDiv .button::after {
@@ -60,4 +61,5 @@
 
 .buttonDiv .button[data-theme='light']::after {
 	right: 5px;
+	background-color: var(--white-bg);
 }

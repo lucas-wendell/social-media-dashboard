@@ -32,6 +32,12 @@
 	justify-content: space-evenly;
 	background-color: var(--card-bg);
 	border-image: linear-gradient(80deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+	transition: 0.7s;
+}
+
+.card:hover {
+	cursor: pointer;
+	background-color: hsl(229, 25%, 26%);
 }
 
 .card .userName {
