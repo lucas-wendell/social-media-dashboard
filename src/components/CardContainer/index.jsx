@@ -1,11 +1,14 @@
-import { useState } from 'react';
-import { Card } from '../Card';
-import { Header } from '../Header';
 import './style.css';
+import { useState } from 'react';
+
 import facebookLogo from '../../images/icon-facebook.svg';
 import twitterLogo from '../../images/icon-twitter.svg';
+
 import instagramLogo from '../../images/icon-instagram.svg';
 import youtubeLogo from '../../images/icon-youtube.svg';
+
+import { Card } from '../Card';
+import { Header } from '../Header';
 
 export const CardContainer = () => {
 	const [state] = useState([

@@ -27,8 +27,8 @@
 	display: flex;
 	border-radius: 5px;
 	align-items: center;
-	flex-direction: column;
 	border-top: 5px solid;
+	flex-direction: column;
 	justify-content: space-evenly;
 	background-color: var(--card-bg);
 	border-image: linear-gradient(80deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;

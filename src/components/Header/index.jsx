@@ -8,7 +8,7 @@ export const Header = () => {
 			<div className="textDiv">
 				<h1>Social Media Dashboard</h1>
 				<p>
-					Total Followers: <span>23.0004</span>
+					Total Followers: <span>23.004</span>
 				</p>
 			</div>
 			<ToggleButton />

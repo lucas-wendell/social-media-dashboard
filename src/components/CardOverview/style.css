@@ -22,22 +22,22 @@
 }
 
 .cardOverview {
-	background-color: var(--card-bg);
 	width: 250px;
 	height: 120px;
-	border-radius: 5px;
 	display: flex;
+	border-radius: 5px;
 	padding: 15px 25px;
-	justify-content: space-between;
 	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--card-bg);
 }
 
 .cardOverview .socialMediaDiv {
 	display: flex;
-	align-items: center;
-	color: var(--text-gray-color);
 	font-weight: 700;
 	font-size: 0.8rem;
+	align-items: center;
+	color: var(--text-gray-color);
 	justify-content: space-between;
 }
 
@@ -48,15 +48,15 @@
 }
 
 .cardOverview .statusDiv h3 {
-	color: var(--text-white-color);
 	font-size: 1.7rem;
+	color: var(--text-white-color);
 }
 
 .cardOverview .statusDiv .percentageDiv {
-	display: flex;
-	align-items: center;
 	gap: 5px;
+	display: flex;
 	font-weight: 700;
+	align-items: center;
 	color: var(--lime-green);
 }
 
