@@ -1,16 +1,6 @@
 import './style.css';
 import arrowUp from '../../images/icon-up.svg';
-/* 
-
-{
-	name: 'facebook',
-	logo: facebookLogo,
-	text: 'Page Views',
-	statusNumber: 87,
-	percentage: '3%',
-	isLosing: false,
-},
-*/
+import arrowDown from '../../images/icon-down.svg';
 
 export const CardOverview = ({
 	name,
@@ -29,8 +19,14 @@ export const CardOverview = ({
 			<div className="statusDiv">
 				<h3>{statusNumber}</h3>
 				<div className="percentageDiv">
-					<img src={arrowUp} alt="arrow-icon" />
-					<p>{percentage}</p>
+					<img src={isLosing ? arrowDown : arrowUp} alt="arrow-icon" />
+					<p
+						style={{
+							color: isLosing ? 'hsl(356, 69%, 56%)' : 'hsl(163, 72%, 41%)',
+						}}
+					>
+						{percentage}
+					</p>
 				</div>
 			</div>
 		</div>
