@@ -5,7 +5,7 @@ import { data } from './data';
 
 export const CardOverviewContainer = () => {
 	const [state] = useState([...data]);
-	console.log(state);
+
 	return (
 		<div className="cardOverviewContainer">
 			<h2>Overview - Today</h2>

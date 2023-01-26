@@ -1,10 +1,13 @@
 import './App.css';
 import { Container } from '../../components/Container';
+import { ThemeProvider } from '../../context';
 function App() {
 	return (
 		<>
-			<div className="topBg"></div>
-			<Container />
+			<ThemeProvider>
+				<div className="topBg"></div>
+				<Container />
+			</ThemeProvider>
 		</>
 	);
 }
