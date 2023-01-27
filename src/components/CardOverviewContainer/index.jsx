@@ -1,14 +1,18 @@
-import { CardOverview } from '../CardOverview';
 import './style.css';
-import { useState } from 'react';
+
 import { data } from './data';
+import { CardOverview } from '../CardOverview';
+
+import { useContext, useState } from 'react';
+import { ThemeContext } from '../../context';
 
 export const CardOverviewContainer = () => {
 	const [state] = useState([...data]);
+	const { theme } = useContext(ThemeContext);
 
 	return (
 		<div className="cardOverviewContainer">
-			<h2>Overview - Today</h2>
+			<h2 data-theme={theme}>Overview - Today</h2>
 			<div className="cards">
 				{state.map((card, index) => {
 					return (

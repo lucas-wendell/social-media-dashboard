@@ -1,10 +1,20 @@
+:root {
+	--text-white-color: hsl(0, 0%, 100%);
+	--whiteTheme-blue-text-color: hsl(230, 17%, 14%);
+}
+
 .cardOverviewContainer {
 	margin-top: 35px;
 }
 
 .cardOverviewContainer h2 {
-	color: #fff;
+	transition: 0.7s;
 	margin-bottom: 15px;
+	color: var(--text-white-color);
+}
+
+.cardOverviewContainer h2[data-theme='light'] {
+	color: var(--whiteTheme-blue-text-color);
 }
 
 .cards {

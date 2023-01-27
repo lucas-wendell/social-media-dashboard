@@ -16,6 +16,7 @@
 	/* Light Theme */
 	--white-bg: hsl(0, 0%, 100%);
 	--white-topBg: hsl(225, 100%, 98%);
+	--white-card-hover: hsl(227, 10%, 82%);
 	--white-card-bg: hsl(227, 47%, 96%);
 	--whiteTheme-text-color: hsl(228, 12%, 44%);
 	--whiteTheme-blue-text-color: hsl(230, 17%, 14%);
@@ -25,6 +26,7 @@
 	width: 250px;
 	height: 120px;
 	display: flex;
+	transition: 0.7s;
 	border-radius: 5px;
 	padding: 15px 25px;
 	flex-direction: column;
@@ -32,9 +34,17 @@
 	background-color: var(--card-bg);
 }
 
+.cardOverview[data-theme='light'] {
+	background-color: var(--white-card-bg);
+}
+
 .cardOverview:hover {
 	cursor: pointer;
 	background-color: hsl(229, 25%, 26%);
+}
+
+.cardOverview[data-theme='light']:hover {
+	background-color: var(--white-card-hover);
 }
 
 .cardOverview .socialMediaDiv {
@@ -46,6 +56,14 @@
 	justify-content: space-between;
 }
 
+.cardOverview .socialMediaDiv p {
+	transition: 0.7s;
+}
+
+.cardOverview[data-theme='light'] .socialMediaDiv {
+	color: var(--whiteTheme-text-color);
+}
+
 .cardOverview .statusDiv {
 	display: flex;
 	align-items: flex-end;
@@ -53,8 +71,13 @@
 }
 
 .cardOverview .statusDiv h3 {
+	transition: 0.7s;
 	font-size: 1.7rem;
 	color: var(--text-white-color);
+}
+
+.cardOverview[data-theme='light'] .statusDiv h3 {
+	color: var(--whiteTheme-blue-text-color);
 }
 
 .cardOverview .statusDiv .percentageDiv {

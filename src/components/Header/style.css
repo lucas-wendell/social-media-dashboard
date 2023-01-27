@@ -31,5 +31,18 @@
 
 .textDiv p {
 	font-weight: 700;
+	transition: 0.7s;
 	color: var(--text-gray-color);
+}
+
+.textDiv h1 {
+	transition: 0.7s;
+}
+
+.textDiv[data-theme='light'] p {
+	color: var(--whiteTheme-text-color);
+}
+
+.textDiv[data-theme='light'] h1 {
+	color: var(--whiteTheme-blue-text-color);
 }

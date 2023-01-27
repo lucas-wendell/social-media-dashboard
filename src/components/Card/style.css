@@ -17,6 +17,7 @@
 	--white-bg: hsl(0, 0%, 100%);
 	--white-topBg: hsl(225, 100%, 98%);
 	--white-card-bg: hsl(227, 47%, 96%);
+	--white-card-hover: hsl(227, 10%, 82%);
 	--whiteTheme-text-color: hsl(228, 12%, 44%);
 	--whiteTheme-blue-text-color: hsl(230, 17%, 14%);
 }
@@ -25,6 +26,7 @@
 	width: 250px;
 	height: 200px;
 	display: flex;
+	transition: 0.7s;
 	border-radius: 5px;
 	align-items: center;
 	border-top: 5px solid;
@@ -32,12 +34,19 @@
 	justify-content: space-evenly;
 	background-color: var(--card-bg);
 	border-image: linear-gradient(80deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
-	transition: 0.7s;
+}
+
+.card[data-theme='light'] {
+	background-color: var(--white-card-bg);
 }
 
 .card:hover {
 	cursor: pointer;
 	background-color: hsl(229, 25%, 26%);
+}
+
+.card[data-theme='light']:hover {
+	background-color: var(--white-card-hover);
 }
 
 .card .userName {
@@ -48,9 +57,14 @@
 }
 
 .card .userName span {
+	transition: 0.7s;
 	font-weight: 700;
 	font-size: 0.8rem;
 	color: var(--text-gray-color);
+}
+
+.card[data-theme='light'] .userName span {
+	color: var(--whiteTheme-text-color);
 }
 
 .card .followersDiv {
@@ -62,14 +76,24 @@
 }
 
 .card .followersDiv h1 {
+	transition: 0.7s;
 	font-size: 2.7rem;
 }
 
+.card[data-theme='light'] .followersDiv h1 {
+	color: var(--whiteTheme-blue-text-color);
+}
+
 .card .followersDiv p {
+	transition: 0.7s;
 	font-size: 0.8rem;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	color: var(--text-gray-color);
+}
+
+.card[data-theme='light'] .followersDiv p {
+	color: var(--whiteTheme-text-color);
 }
 
 .card .todayStatus {

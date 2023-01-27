@@ -1,10 +1,10 @@
 import './style.css';
-import { useState } from 'react';
 
 import { Card } from '../Card';
 import { Header } from '../Header';
 
 import { data } from './data';
+import { useState } from 'react';
 
 export const CardContainer = () => {
 	const [state] = useState([...data]);

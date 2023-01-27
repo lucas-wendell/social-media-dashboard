@@ -1,8 +1,8 @@
-import facebookLogo from '../../images/icon-facebook.svg';
 import twitterLogo from '../../images/icon-twitter.svg';
+import facebookLogo from '../../images/icon-facebook.svg';
 
-import instagramLogo from '../../images/icon-instagram.svg';
 import youtubeLogo from '../../images/icon-youtube.svg';
+import instagramLogo from '../../images/icon-instagram.svg';
 
 export const data = [
 	{

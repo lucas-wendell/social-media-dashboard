@@ -2,7 +2,9 @@ import './style.css';
 
 import arrowUp from '../../images/icon-up.svg';
 import arrowDown from '../../images/icon-down.svg';
-import { useCallback, useEffect, useRef } from 'react';
+
+import { useCallback, useContext, useEffect, useRef } from 'react';
+import { ThemeContext } from '../../context';
 
 export const Card = ({
 	logo,
@@ -12,6 +14,7 @@ export const Card = ({
 	username,
 }) => {
 	const imgRef = useRef(null);
+	const { theme } = useContext(ThemeContext);
 
 	const handleImg = useCallback(() => {
 		imgRef.current.setAttribute('src', losingFollowers ? arrowDown : arrowUp);
@@ -22,7 +25,7 @@ export const Card = ({
 	}, [handleImg]);
 
 	return (
-		<div className="card">
+		<div className="card" data-theme={theme}>
 			<p className="userName">
 				<img src={logo} alt="social-media-icon" /> <span>{username}</span>
 			</p>

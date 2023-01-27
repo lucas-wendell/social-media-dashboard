@@ -1,6 +1,10 @@
 import './style.css';
+
 import arrowUp from '../../images/icon-up.svg';
 import arrowDown from '../../images/icon-down.svg';
+
+import { useContext } from 'react';
+import { ThemeContext } from '../../context';
 
 export const CardOverview = ({
 	name,
@@ -10,8 +14,10 @@ export const CardOverview = ({
 	percentage,
 	isLosing,
 }) => {
+	const { theme } = useContext(ThemeContext);
+
 	return (
-		<div className="cardOverview">
+		<div className="cardOverview" data-theme={theme}>
 			<div className="socialMediaDiv">
 				<p>{text}</p>
 				<img src={logo} alt={`icon-${name}`} />

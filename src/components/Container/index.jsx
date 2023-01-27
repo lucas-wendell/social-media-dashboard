@@ -1,6 +1,7 @@
+import './style.css';
+
 import { CardContainer } from '../CardContainer';
 import { CardOverviewContainer } from '../CardOverviewContainer';
-import './style.css';
 
 export const Container = () => {
 	return (

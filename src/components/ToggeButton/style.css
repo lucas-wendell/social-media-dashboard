@@ -29,6 +29,14 @@
 	color: var(--text-white-color);
 }
 
+.buttonDiv p {
+	transition: 0.7s;
+}
+
+.buttonDiv p[data-theme='light'] {
+	color: var(--whiteTheme-text-color);
+}
+
 .buttonDiv .button {
 	background: rgb(55, 143, 230);
 	background: linear-gradient(
@@ -44,15 +52,14 @@
 	justify-content: flex-start;
 	position: relative;
 	cursor: pointer;
-	/* transition: 0.7s; */
 }
 
 .buttonDiv .button::after {
 	content: '';
-	position: absolute;
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
+	position: absolute;
 	background-color: var(--card-bg);
 }
 
