@@ -22,6 +22,7 @@ export const CardContainer = () => {
 							followersToday={socialMedia.followersToday}
 							losingFollowers={socialMedia.losingFollowers}
 							username={socialMedia.username}
+							borderColor={socialMedia.borderColor}
 						/>
 					);
 				})}

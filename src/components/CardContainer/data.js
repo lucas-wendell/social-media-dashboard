@@ -12,6 +12,7 @@ export const data = [
 		followersNumber: 1987,
 		followersToday: 12,
 		losingFollowers: false,
+		borderColor: 'hsl(208, 92%, 53%)',
 	},
 	{
 		name: 'twitter',
@@ -20,6 +21,7 @@ export const data = [
 		followersNumber: 1044,
 		followersToday: 99,
 		losingFollowers: false,
+		borderColor: 'hsl(203, 89%, 53%)',
 	},
 	{
 		name: 'instagram',
@@ -28,6 +30,8 @@ export const data = [
 		followersNumber: '11k',
 		followersToday: 1099,
 		losingFollowers: false,
+		borderColor:
+			'linear-gradient(80deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%))',
 	},
 	{
 		name: 'youtube',
@@ -36,5 +40,6 @@ export const data = [
 		followersNumber: 8239,
 		followersToday: 144,
 		losingFollowers: true,
+		borderColor: 'hsl(348, 97%, 39%)',
 	},
 ];
