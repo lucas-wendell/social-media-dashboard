@@ -17,11 +17,18 @@
 	font-family: 'Inter', sans-serif;
 }
 
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
 .App {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
 	transition: 0.7s;
+	overflow: scroll;
+	overflow-x: hidden;
 	position: relative;
 	align-items: center;
 	justify-content: center;
@@ -44,4 +51,10 @@
 
 .topBg[data-theme='light'] {
 	background-color: var(--white-topBg) !important;
+}
+
+@media (max-width: 890px) {
+	.App {
+		height: max-content;
+	}
 }

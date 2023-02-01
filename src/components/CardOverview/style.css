@@ -12,7 +12,6 @@
 }
 
 .cardOverview {
-	width: 250px;
 	height: 120px;
 	display: flex;
 	transition: 0.7s;

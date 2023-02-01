@@ -15,7 +15,6 @@
 }
 
 .card {
-	width: 250px;
 	height: 200px;
 	display: flex;
 	transition: 0.7s;

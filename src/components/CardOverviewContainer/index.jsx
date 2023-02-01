@@ -13,7 +13,7 @@ export const CardOverviewContainer = () => {
 	return (
 		<div className="cardOverviewContainer">
 			<h2 data-theme={theme}>Overview - Today</h2>
-			<div className="cards">
+			<div className="cardsOverview">
 				{state.map((card, index) => {
 					return (
 						<CardOverview

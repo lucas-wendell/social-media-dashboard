@@ -33,3 +33,35 @@
 .textDiv[data-theme='light'] h1 {
 	color: var(--whiteTheme-blue-text-color);
 }
+
+@media (max-width: 768px) {
+	.textDiv h1 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 550px) {
+	.textDiv h1 {
+		font-size: 1rem;
+	}
+
+	.textDiv p {
+		font-size: 0.7rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.textDiv h1 {
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 310px) {
+	.textDiv h1 {
+		font-size: 0.6rem;
+	}
+
+	.textDiv p {
+		font-size: 0.5rem;
+	}
+}
